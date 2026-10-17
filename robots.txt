@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lilycao2026.github.io/roofmere-website/sitemap.xml
