@@ -4,10 +4,12 @@ One row per live site or listing. Update this file in the same PR that adds, ren
 
 Last updated: 2026-10-18.
 
+**Target: two sites.** The product website, and one Roofmere App that is Free by default, unlocks Pro with a licence, and shows the sample family at `?sample`. The Pro test build below is retired once the App's sample shows the Pro features. Private Cloud buyers deploy their own copy; we host only the store listing and the setup guide.
+
 | What | URL | Platform · project name | Built from | Visibility | Purpose / notes |
 | --- | --- | --- | --- | --- | --- |
 | Product website | https://lilycao2026.github.io/roofmere-website/ | GitHub Pages · repo `roofmere-website` | `main` branch, published automatically | Public | Marketing page and guides. |
-| **Local Free** (offline, installable) | https://roofmere-local-free.netlify.app | Netlify (Drop) · `roofmere-local-free` (was `serene-travesseiro-5ee272`, renamed 2026-10-18) | `node build-local.js` from roofmere-template commit `d8334e3` (L-01, **not yet merged into `dev`**) · deployed 2026-10-17 by hand | Public | Linked from the website's Local Free card. Visitors' data lives in their browser **under this exact address**: never rename it or move Free to a new address without a backup/restore path. |
+| **Roofmere App** — Local Free today; Pro will unlock here once licensing exists (offline, installable) | https://roofmere.netlify.app | Netlify (Drop) · `roofmere` (was `serene-travesseiro-5ee272`, then `roofmere-local-free`; final name set 2026-10-18) | `node build-local.js` from roofmere-template commit `d8334e3` (L-01, **not yet merged into `dev`**) · deployed 2026-10-17 by hand | Public | Linked from the website's Local Free card. Planned to be the only app site: Free, licensed Pro and `?sample`. Visitors' data lives in their browser **under this exact address**: never rename it again without a backup/restore path. |
 | **Local Pro sample** | https://cute-tarsier-c639b4.netlify.app/?sample | Netlify · `cute-tarsier-c639b4` | A Local **Pro test build** (`build-local.js --pro`), around 2026-10-14; exact commit not recorded | Public | Website links only to `?sample` (fictional family, nothing saved). Without `?sample` this site is a working **unlicensed Pro** that saves data: not for real customers. Rebuild it from `dev` once L-01 is merged. |
 | Private Cloud beta (store) | https://lilycao.gumroad.com/l/roofmere | Gumroad · product `roofmere` | Legacy Basic / Family / Complete ZIPs | Public | Current paid beta. |
 | Cloud setup video | https://youtu.be/JVVJcDkPMus | YouTube | — | Public / unlisted (check) | Linked from the Private Cloud card. |
