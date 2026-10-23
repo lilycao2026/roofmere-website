@@ -5,7 +5,7 @@ Public, static marketing landing page for Roofmere. Hosted using GitHub Pages on
 ## Publish
 GitHub repository Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save.
 
-Expected URL after Pages publishes: https://lilycao2026.github.io/roofmere-website/
+Live at https://roofmere.com/ (GitHub Pages custom domain, set by `CNAME`). The old https://lilycao2026.github.io/roofmere-website/ address redirects there.
 
 Every live site, listing and preview, with the code it was built from: [docs/DEPLOYMENTS.md](docs/DEPLOYMENTS.md).
 
