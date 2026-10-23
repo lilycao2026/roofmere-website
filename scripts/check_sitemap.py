@@ -5,7 +5,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-BASE = "https://lilycao2026.github.io/roofmere-website/"
+BASE = "https://roofmere.com/"
 SITEMAP = BASE + "sitemap.xml"
 NS = "{http://www.sitemaps.org/schemas/sitemap/0.9}"
 EXPECTED = {
