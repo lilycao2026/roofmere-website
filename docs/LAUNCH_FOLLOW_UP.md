@@ -18,7 +18,7 @@ Product dev already has IndexedDB writes, save-failure feedback/rollback, manual
 - Product docs say --pro is a founder test build that must not be publicly published, while the website already linked a public Pro preview. This update points visitors to sample mode only; it does not secure or change that deployment. Resolve the intended preview policy before promotion.
 - Verify iPhone Safari and desktop: first run, 11th account/second property refusal, imported duplicates, quota/write failures, backup/restore, clearing site data, update persistence and sample isolation. Use synthetic fixtures only.
 - Explain no automatic sync, private-window limitations and backup responsibilities at first run and before checkout. Avoid unreliable private-mode detection and unsupported blanket Safari retention claims.
-- Validate primary and secondary CTA paths, phone layout, keyboard access, contrast and image readability. Track visits and funnel only after a minimal privacy/data-collection design; do not silently introduce analytics.
+- Validate primary and secondary CTA paths, phone layout, keyboard access, contrast and image readability. Track visits and funnel only after a minimal privacy/data-collection design; do not silently introduce analytics. Owner decision 2026-10-24: the website (roofmere.com) uses Cloudflare Web Analytics (no cookies, aggregate visits, referrers, pages, countries, devices), disclosed in the homepage privacy note. The Roofmere app has no analytics.
 
 ## Separate design decisions / larger upgrades
 ### Purchase, license and trial
