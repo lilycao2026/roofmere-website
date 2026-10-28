@@ -1,0 +1,17 @@
+/* Roofmere shared site shell. One header implementation for all static pages. */
+#site-header{position:sticky!important;top:0;z-index:100;background:#fff!important;border-bottom:1px solid #e8e0ef!important;box-shadow:none!important}
+#site-header .site-nav{max-width:1120px;margin:0 auto;padding:18px 24px;min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:nowrap}
+#site-header .site-brand{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#5f2d86!important;font-size:25px;font-weight:800;letter-spacing:-.045em;text-decoration:none;line-height:1.2;white-space:nowrap}
+#site-header .site-links{display:flex;align-items:center;gap:24px;margin-left:auto}
+#site-header .site-links a{font-size:14px;font-weight:650;text-decoration:none;color:#493855;white-space:nowrap}
+#site-header .site-links a[aria-current="page"]{color:#5f2d86}
+#site-header .site-menu{display:none;position:relative;margin-left:auto}
+#site-header .site-menu summary{list-style:none;display:grid;place-items:center;width:46px;height:46px;border:1px solid #e8e0ef;border-radius:13px;background:#f7f3fb;color:#5f2d86;font-size:23px;cursor:pointer;line-height:1}
+#site-header .site-menu summary::-webkit-details-marker{display:none}
+#site-header .site-menu[open] summary{background:#eee5f6}
+#site-header .site-menu-panel{position:absolute;top:calc(100% + 10px);right:0;display:grid;width:240px;max-width:calc(100vw - 40px);padding:8px;background:white;border:1px solid #e8e0ef;border-radius:14px;box-shadow:0 15px 34px #301e4324}
+#site-header .site-menu-panel a{display:block;padding:12px 14px;border-radius:9px;text-decoration:none;color:#3d2058;font-size:15px;font-weight:600}
+#site-header .site-menu-panel a:hover,#site-header .site-menu-panel a:focus-visible{background:#f6f2fa}
+#site-header a:focus-visible,#site-header summary:focus-visible{outline:3px solid #a984c4;outline-offset:3px}
+@media(max-width:800px){#site-header .site-nav{padding:17px 22px;min-height:78px}#site-header .site-links{display:none}#site-header .site-menu{display:block}}
+@media(max-width:360px){#site-header .site-brand{font-size:23px}#site-header .site-nav{padding:15px 18px}}
