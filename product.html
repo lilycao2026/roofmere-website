@@ -42,6 +42,10 @@ footer{border-color:#e7deef}a:focus-visible{outline:3px solid #9a70ba;outline-of
 .tour-media .video-launch .video-thumb>img{display:block!important;position:static!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;height:auto!important;max-width:100%!important;max-height:none!important;aspect-ratio:16/9!important;object-fit:cover!important;object-position:center!important;justify-self:auto!important;align-self:auto!important;margin:0!important;border-radius:14px!important;box-shadow:none!important}
 .tour-section .tour-copy p{max-width:46ch}
 @media(max-width:760px){.tour-section{display:flex!important;flex-direction:column!important;gap:18px!important;padding:24px 0!important;margin:0!important;background:transparent!important;border-left:0!important;border-right:0!important;border-radius:0!important}.tour-section .tour-media{order:0!important;width:100%!important;max-width:100%!important;margin:0!important}.tour-section .tour-copy{order:1!important;width:100%!important}.tour-section .tour-copy p{font-size:15px;line-height:1.55;margin:0 0 12px}.tour-section .tour-copy .cta{font-size:14px;padding:11px 14px;margin:5px 7px 5px 0}.tour-section .tour-copy .tag,.tour-section .tour-copy h2{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;margin:-1px!important;padding:0!important;border:0!important}}
+
+/* Native video playback must be visible on Android before fullscreen is requested. */
+.tour-media video{object-fit:contain;aspect-ratio:512/1108}
+.tour-media .media-fallback a{color:#5f2d86;text-decoration:underline}
 </style></head><body><header id="site-header"><nav class="site-nav" aria-label="Main navigation"><a class="site-brand" href="index.html">Roofmere</a></nav></header><main>
 <div class="tour-hero"><div><div class="eyeline">The Roofmere product tour</div><h1>Build a financial picture you can review and reuse.</h1><p class="lead">A private home for your household's financial knowledge. Bring the important details together, keep them organized, and choose how to put that knowledge to work.</p><a class="cta" href="https://roofmere-app-test.netlify.app/?sample">Explore the Pro Demo</a><a class="cta secondary" href="get-started.html">Get started for free</a><p class="fineprint">Try the Pro Demo with fictional data, including AI Context Export. Local Free does not include AI Context Export.</p></div><div class="card"><span class="eyeline">Live product experience</span><h2>Explore the current Roofmere app.</h2><p>Open the current test app to see the latest interface and try the sample household. This page will use updated product screenshots after the new UI is captured and verified.</p><a class="cta secondary" href="https://roofmere-app-test.netlify.app/?sample">Open current app</a></div></div>
 <section><div class="eyeline">A three-part product tour</div><h2>See what Roofmere can do.</h2><p>These are real Roofmere screen recordings, not a simulated interface. Each walkthrough focuses on one practical part of your financial workflow.</p></section>
@@ -51,4 +55,72 @@ footer{border-color:#e7deef}a:focus-visible{outline:3px solid #9a70ba;outline-of
 <section><h2>Choose the version that fits.</h2><table class="edition-table"><thead><tr><th scope="col">Version</th><th scope="col">What you can do</th><th scope="col">AI Context Export</th></tr></thead><tbody><tr><td><strong>Pro Demo</strong><br><span class="fineprint">Free to explore</span></td><td>Explore Pro features using fictional sample data</td><td>Yes, sample data only</td></tr><tr><td><strong>Local Free</strong><br><span class="fineprint">Free</span></td><td>Build your own browser-local financial overview and use supported imports and backups</td><td>No</td></tr><tr><td><strong>Local Pro</strong><br><span class="fineprint">$39 beta / $49 planned regular, one-time</span></td><td>Advanced imports, reporting and AI Context Export with your own data</td><td>Yes</td></tr><tr><td><strong>Private Cloud</strong></td><td>Self-hosted household sharing, sync and document Vault; setup and maintenance required</td><td>Check current edition details</td></tr></tbody></table><p class="fineprint">Pro Demo is a demonstration mode, not a separate purchased edition. Check current purchasing availability before payment.</p></section>
 <section><div class="feature-grid"><article class="card"><h3>Your data, your storage</h3><p>Local editions store financial records in your browser, without automatic cross-device sync. Keep a backup.</p></article><article class="card"><h3>No bank connection required</h3><p>Choose when to update. Roofmere does not automatically sync balances from financial institutions.</p></article><article class="card"><h3>AI on your terms</h3><p>Review what you share. Any information pasted into an external AI is subject to that provider's own terms and retention policies.</p></article></div></section>
 <section class="end-cta"><h2>Explore Roofmere with real sample data.</h2><p>Try the interface first, then choose whether Local Free or a paid edition fits the way you manage your financial life.</p><a class="cta" href="https://roofmere-app-test.netlify.app/?sample">Open the Pro Demo</a><a class="cta secondary" href="get-started.html">Get started</a></section>
-</main><footer>© 2026 Roofmere · Your wealth. Your knowledge. Your future. · <a href="index.html">Home</a></footer><script src="assets/site-header.js" defer></script><script>document.querySelectorAll('[data-video]').forEach(function(box){var v=box.querySelector('video'),btn=box.querySelector('.video-launch');function fail(){box.classList.add('no-file')}v.addEventListener('error',fail);v.querySelector('source').addEventListener('error',fail);btn.addEventListener('click',async function(){try{v.controls=true;v.playsInline=false;v.setAttribute('webkit-playsinline','false');if(typeof v.webkitEnterFullscreen==='function'){v.webkitEnterFullscreen();v.play().catch(function(){});return}if(v.requestFullscreen){await v.requestFullscreen();await v.play();return}}catch(e){}v.style.display='block';btn.style.display='none';v.style.width='min(100%,340px)';v.style.maxHeight='75vh';v.style.background='#241c2c';v.style.borderRadius='16px';v.play().catch(function(){})});v.addEventListener('webkitendfullscreen',function(){v.pause();v.controls=false;v.style.display='none';btn.style.display='flex'});v.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement){v.pause();v.controls=false;v.style.display='none';btn.style.display='flex'}})});</script></body></html>
+</main><footer>© 2026 Roofmere · Your wealth. Your knowledge. Your future. · <a href="index.html">Home</a></footer><script src="assets/site-header.js" defer></script><script>
+document.querySelectorAll('[data-video]').forEach(function(box){
+  const video=box.querySelector('video');
+  const launch=box.querySelector('.video-launch');
+  const fallback=box.querySelector('.media-fallback');
+  let playingInline=false;
+  function reset(){
+    video.pause();
+    video.controls=false;
+    video.style.display='none';
+    launch.style.display='';
+    playingInline=false;
+  }
+  function showInline(){
+    playingInline=true;
+    launch.style.display='none';
+    video.style.display='block';
+    video.style.width='100%';
+    video.style.maxWidth='360px';
+    video.style.maxHeight='78vh';
+    video.style.margin='0 auto';
+    video.style.background='#241c2c';
+    video.style.borderRadius='12px';
+    video.controls=true;
+    video.playsInline=true;
+  }
+  function showError(){
+    showInline();
+    video.setAttribute('controls','');
+    if(fallback){
+      fallback.style.display='block';
+      fallback.innerHTML='<p>Video could not start on this browser.</p><a href="'+video.querySelector('source').getAttribute('src')+'" target="_blank" rel="noopener">Open video directly</a>';
+    }
+  }
+  launch.addEventListener('click',async function(){
+    if(launch.disabled)return;
+    launch.disabled=true;
+    video.controls=true;
+    try{
+      // Keep native iPhone fullscreen behavior, which is already working.
+      if(typeof video.webkitEnterFullscreen==='function'){
+        video.playsInline=false;
+        video.webkitEnterFullscreen();
+        await video.play();
+        return;
+      }
+      // Android/Chromium: the video must be visible before requesting fullscreen.
+      showInline();
+      await video.play();
+      if(typeof video.requestFullscreen==='function'){
+        try{await video.requestFullscreen()}catch(e){/* inline playback remains usable */}
+      }
+    }catch(e){
+      // Do not leave Android on a blank fullscreen surface.
+      if(document.fullscreenElement===video&&document.exitFullscreen){
+        try{await document.exitFullscreen()}catch(ignore){}
+      }
+      showError();
+    }finally{launch.disabled=false}
+  });
+  video.addEventListener('webkitendfullscreen',reset);
+  document.addEventListener('fullscreenchange',function(){
+    if(!document.fullscreenElement&&playingInline&&video.paused)reset();
+  });
+  video.addEventListener('ended',function(){
+    if(!document.fullscreenElement)reset();
+  });
+});
+</script></body></html>
