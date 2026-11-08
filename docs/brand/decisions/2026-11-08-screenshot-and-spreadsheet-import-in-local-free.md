@@ -2,7 +2,7 @@
 
 Date: 2026-11-08 (America/Los_Angeles)
 Owner: Lily Cao
-Status: Owner requested; exact wording pending owner approval in the pull request
+Status: Owner approved the proposed copy and page scope on 2026-11-08 (America/Los_Angeles); publication pending the Local app release.
 
 ## Decision
 
