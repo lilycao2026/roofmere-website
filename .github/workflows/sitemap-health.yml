@@ -6,12 +6,14 @@ on:
     paths:
       - sitemap.xml
       - robots.txt
+      - '**.html'
       - scripts/check_sitemap.py
       - .github/workflows/sitemap-health.yml
   pull_request:
     paths:
       - sitemap.xml
       - robots.txt
+      - '**.html'
       - scripts/check_sitemap.py
       - .github/workflows/sitemap-health.yml
   workflow_dispatch:
